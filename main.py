@@ -4,18 +4,18 @@ output = 1
 # App config.
 DEBUG = True
 import pandas as pd
-from bs4 import BeautifulSoup
-import requests
+# from bs4 import BeautifulSoup
+# import requests
 import numpy as np
-from sklearn.cluster import KMeans
-from sklearn.manifold import TSNE
+# from sklearn.cluster import KMeans
+# from sklearn.manifold import TSNE
 import time
 import spacy
 # import en_core_web_md
-nlp = spacy.load('en_core_web_md')
+# nlp = spacy.load('en_core_web_md')
 RS = 123
-spacy_stopwords = spacy.lang.en.stop_words.STOP_WORDS
-from scipy.spatial.distance import cosine
+# spacy_stopwords = spacy.lang.en.stop_words.STOP_WORDS
+# from scipy.spatial.distance import cosine
 
 # def get_data():
 # 	"""
@@ -156,6 +156,7 @@ from scipy.spatial.distance import cosine
 # 	return best_match
 
 app = Flask(__name__)
+
 @app.route("/")
 def hello():
 
