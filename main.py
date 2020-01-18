@@ -11,8 +11,8 @@ from sklearn.cluster import KMeans
 from sklearn.manifold import TSNE
 import time
 import spacy
-import en_core_web_md
-nlp = en_core_web_md.load()
+# import en_core_web_md
+nlp = spacy.load('en_core_web_md')
 RS = 123
 spacy_stopwords = spacy.lang.en.stop_words.STOP_WORDS
 from scipy.spatial.distance import cosine
